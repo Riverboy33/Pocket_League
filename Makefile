@@ -5,14 +5,31 @@
 ## Makefile
 ##
 
-SRC = my_hunter.c
+CSFML_FLAGS = -lcsfml-window -lcsfml-system -lcsfml-graphics -lcsfml-audio
+
+SRC = cleanup.c \
+	create_sprite.c \
+	display.c \
+	events.c \
+	gameloop.c \
+	handle_death.c \
+	handle_str.c \
+	helper.c \
+	hunter.c \
+	init.c \
+	main.c \
+	my_strlen.c \
+	proba.c \
+	update.c
+
+OBJ = $(SRC.c=.o)
 
 NAME = my_hunter
 
 all: $(NAME)
 
-$(NAME):
-	@clang -o $(NAME) $(SRC) -lcsfml-window -lcsfml-system -lcsfml-graphics -lcsfml-audio
+$(NAME): $(OBJ)
+	@clang -o $(NAME) $(SRC) $(CSFML_FLAGS) -Iinclude
 
 run: re
 	@./$(NAME)
@@ -21,5 +38,8 @@ re: fclean all
 
 fclean:
 	@rm $(NAME)
+	@rm -f *.gcda
+	@rm -f *.gcno
+	@rm -f *.o
 
 .PHONY: all run re fclean

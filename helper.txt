@@ -1,0 +1,52 @@
+==============================================
+     POCKET LEAGUE - TOTALLY SERIOUS HELP
+==============================================
+
+Welcome to Pocket League.
+A game made by a Rocket League fan who clearly had too much free time
+and needed a way to "relax" (you won't relax).
+
+----------------------------------------
+
+THE OBJECTIVE (if you can handle it):
+Stop the cars from reaching the right side of the field.
+
+If they touch the wall: you're bad.
+If they go fast: you're REALLY bad.
+
+Some cars are faster because life is unfair.
+
+If the bot score (on the left) reaches 3:
+Congratulations, you lost like a champion.
+
+BUT:
+If you destroy a car very close to the final wall,
+you magically regain a life because... game design.
+
+----------------------------------------
+
+MENU CONTROLS (try not to mess this up):
+Press:
+- "1" to choose car 1
+- "2" to choose car 2
+
+Choose wisely, it probably won’t matter.
+
+Press "Start" when you feel brave enough.
+
+After you lose, your best score will be displayed
+so you can remember how bad you are.
+
+----------------------------------------
+
+IMPORTANT WARNING:
+If something breaks, crashes, freezes, or sets your PC on fire:
+Open the code and fix it yourself.
+I am not tech support.
+
+----------------------------------------
+
+Good luck.
+You’ll need it.
+
+========================================
