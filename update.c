@@ -96,7 +96,6 @@ void update_demo(game_t *game)
 {
     sfTime elapsed = sfClock_getElapsedTime(game->explo->clock);
     float seconds = sfTime_asSeconds(elapsed);
-    printf("seconds : %f\n", seconds);
 
     if (seconds > 0.15f && game->explo->is_visible) {
         game->explo->area.left += 360;
