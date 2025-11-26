@@ -1,0 +1,5 @@
+*.o
+*.log
+my_hunter
+*.gcda
+*.gcno
