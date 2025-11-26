@@ -5,6 +5,7 @@
 ## Makefile
 ##
 
+CFLAGS = -I./include
 CSFML_FLAGS = -lcsfml-window -lcsfml-system -lcsfml-graphics -lcsfml-audio
 
 SRC = src/cleanup.c \
@@ -24,12 +25,15 @@ SRC = src/cleanup.c \
 
 OBJ = $(SRC.c=.o)
 
-NAME = my_hunter
+NAME = Pocket_League
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@clang -o $(NAME) $(SRC) $(CSFML_FLAGS) -Iinclude -lX11
+
+windows:
+	@x86_64-w64-mingw32-gcc $(SRC) -o my_hunter.exe $(CSFML_FLAGS) $(CFLAGS)
 
 run: re
 	@./$(NAME)
