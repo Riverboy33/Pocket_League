@@ -20,7 +20,8 @@ SRC = cleanup.c \
 	main.c \
 	my_strlen.c \
 	proba.c \
-	update.c
+	update.c \
+	check.c
 
 OBJ = $(SRC.c=.o)
 
