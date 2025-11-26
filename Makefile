@@ -7,20 +7,20 @@
 
 CSFML_FLAGS = -lcsfml-window -lcsfml-system -lcsfml-graphics -lcsfml-audio
 
-SRC = cleanup.c \
-	create_sprite.c \
-	display.c \
-	events.c \
-	gameloop.c \
-	handle_death.c \
-	handle_str.c \
-	helper.c \
-	hunter.c \
-	init.c \
-	main.c \
-	my_strlen.c \
-	proba.c \
-	update.c
+SRC = src/cleanup.c \
+	src/create_sprite.c \
+	src/display.c \
+	src/events.c \
+	src/gameloop.c \
+	src/handle_death.c \
+	src/handle_str.c \
+	src/helper.c \
+	src/hunter.c \
+	src/init.c \
+	src/main.c \
+	src/my_strlen.c \
+	src/proba.c \
+	src/update.c
 
 OBJ = $(SRC.c=.o)
 
