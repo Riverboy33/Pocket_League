@@ -20,8 +20,7 @@ SRC = cleanup.c \
 	main.c \
 	my_strlen.c \
 	proba.c \
-	update.c \
-	check.c
+	update.c
 
 OBJ = $(SRC.c=.o)
 
@@ -30,7 +29,7 @@ NAME = my_hunter
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@clang -o $(NAME) $(SRC) $(CSFML_FLAGS) -Iinclude
+	@clang -o $(NAME) $(SRC) $(CSFML_FLAGS) -Iinclude -lX11
 
 run: re
 	@./$(NAME)
