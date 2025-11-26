@@ -3,3 +3,4 @@
 my_hunter
 *.gcda
 *.gcno
+vgcore*
