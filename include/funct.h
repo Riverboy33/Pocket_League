@@ -34,5 +34,9 @@ int my_strlen(char const *str);
 int my_hunter(void);
 void display_helper(void);
 void update_demo(game_t *game);
+void check_sprite(sfSprite *sprite);
+void check_font(sfFont *font);
+void check_music(sfMusic *music);
+void check_sound_buff(sfSoundBuffer *buff);
 
 #endif /* !FUNCT_H_ */
