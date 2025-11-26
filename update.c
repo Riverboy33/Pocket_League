@@ -120,10 +120,12 @@ void change_car(int car_nb, car_t **car, game_t *game)
         c = car[i];
         c->sprite = create_sprite(concat3("assets/Car_",
             int_to_str(car_nb), ".png"), NULL, 0.25, 0.25);
+        check_sprite(c->sprite);
         sfSprite_setOrigin(c->sprite, (sfVector2f){86.45, 45.5});
     }
     game->car->sprite = create_sprite(concat3("assets/Car_",
         int_to_str(car_nb), ".png"), NULL, 1, 1);
+    check_sprite(game->car->sprite);
     game->car->pos = (sfVector2f){750, 400};
     sfSprite_setPosition(game->car->sprite, game->car->pos);
 }
