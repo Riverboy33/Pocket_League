@@ -10,13 +10,10 @@
 sfSprite *create_sprite(char *filepath, sfIntRect *area, float sx, float sy)
 {
     sfTexture *texture = sfTexture_createFromFile(filepath, NULL);
-    sfSprite *sprite = NULL;
+    sfSprite *sprite = sfSprite_create();
 
-    if (!texture )
-        return NULL;
-    sprite = sfSprite_create();
-    if (!sprite )
-        return NULL;
+    if (!texture || !sprite)
+        exit(84);
     sfSprite_setTexture(sprite, texture, sfTrue);
     if (area)
         sfSprite_setTextureRect(sprite, *area);
